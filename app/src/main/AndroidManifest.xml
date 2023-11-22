@@ -15,7 +15,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.MovieApp.NoActionBar">
+            android:theme="@style/Theme.MovieApp.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +27,15 @@
         <activity
             android:name=".detail.DetailMovieActivity"
             android:label="@string/title_activity_detail_home"
-            android:theme="@style/Theme.MovieApp.NoActionBar" />
+            android:theme="@style/Theme.MovieApp.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="movieapp"
+                    android:host="detail"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

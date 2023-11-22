@@ -25,6 +25,7 @@ class MovieRepository(
                 }
             }
 
+            @Suppress("SameReturnValue")
             override fun shouldFetch(data: List<Movie>?): Boolean =
 //                data == null || data.isEmpty()
                  true // ganti dengan true jika ingin selalu mengambil data dari internet

@@ -36,6 +36,7 @@ abstract class NetworkBoundResource<ResultType, RequestType> {
         }
     }
 
+    @Suppress("EmptyMethod")
     protected open fun onFetchFailed() {}
 
     protected abstract fun loadFromDB(): Flow<ResultType>

@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.michael.movieapp.core.utils
 
 import android.os.Handler
