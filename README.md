@@ -25,8 +25,8 @@ An Android App that shows list of movies from themoviedb api. Focusing on clean 
 
 ## How To Build This App In Your Android Studio
 - Download this repository and then open it in your android studio
-- Make sure you are using jdk 11, if you're not switch the jdk through the File > Settings > Build, Excecution, Deployment > Builds > Gradle > Gradle jdk
-- create a file api-keys.properties and the inside the file add the api key from [The Movie Database](https://www.themoviedb.org/) so the file will contain API_KEY=your_api_key
+- Make sure you are using jdk 11, if you're not switch the jdk through the File > Settings > Build, Execution, Deployment > Builds > Gradle > Gradle jdk
+- Create a file api-keys.properties on the same level or folder as this readme and the inside the file add the api key from [The Movie Database](https://www.themoviedb.org/) so the file will contain API_KEY=your_api_key
 - Build the app and then run it in your desired device
 
 ## Authors
