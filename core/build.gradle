@@ -18,9 +18,9 @@ android {
         versionName "1.0"
         Properties properties = new Properties()
         properties.load(project.rootProject.file("api-keys.properties").newDataInputStream())
-        buildConfigField "String","API_KEY", "\"${properties.getProperty("API_KEY")}\""
+        buildConfigField "String", "API_KEY", "\"${properties.getProperty("API_KEY")}\""
 
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -32,9 +32,14 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
@@ -57,4 +62,6 @@ dependencies {
 
     implementation "net.zetetic:android-database-sqlcipher:4.4.0"
     implementation "androidx.sqlite:sqlite-ktx:2.1.0"
+
+    implementation "androidx.multidex:multidex:2.0.1"
 }
